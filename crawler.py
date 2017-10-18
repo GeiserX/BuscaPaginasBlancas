@@ -1,4 +1,22 @@
 #!/usr/bin/env python3
+def main():
+#	from sys import argv
+#	argv.pop(0)	
+
+#	for surname in argv:
+#		surname.replace(" ", "")
+#		print(surname)
+#		PyCrawler(surname)
+
+	surnames = SearchSurnames()
+	for surname in surnames:
+		surname.replace(" ", "")
+		surname.replace("\n", "")
+		print(surname)
+		PyCrawler(surname)	
+
+	print("Finished!")
+
 def PyCrawler(apellido):
 
     import sqlite3
@@ -27,8 +45,6 @@ def PyCrawler(apellido):
     getInfo(pa, cursor, bd)
 
     cursor.close()
-
-    print("Finished!")
 
 
 def apellido1(apellido):
@@ -87,3 +103,27 @@ def getInfo(pa,cursor,bd):
         cursor.execute(sql)
 
     bd.commit()
+
+
+def SearchSurnames():
+	
+	from bs4 import BeautifulSoup
+	import requests
+	page = requests.get('http://worlduniverse.wikia.com/wiki/Bulgarian_surnames')
+	soup = BeautifulSoup(page.content, 'html.parser')
+
+	surnames=[]
+	for item in soup.find_all('div', attrs={'id':'mw-content-text'}):
+		for li in item.find_all('li'):
+			surnames.append(li.text)
+
+#	surnames = []
+#	for item in li:
+#		surnames.append(item.contents)
+		#print()
+
+	return surnames
+
+
+if __name__ == "__main__":
+    main()
