@@ -10,8 +10,8 @@ def main():
 
 	surnames = SearchSurnames()
 	for surname in surnames:
-		surname.replace(" ", "")
-		surname.replace("\n", "")
+		surname=surname.replace(" ", "")
+		surname=surname.replace("\n", "")
 		print(surname)
 		PyCrawler(surname)	
 
