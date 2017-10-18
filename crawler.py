@@ -94,7 +94,7 @@ def getInfo(pa,cursor,bd):
     lugar = []
     for item in h3:
         p = item.find_next_sibling('p')
-        calle.append(str(p.contents).split("\\t")[1].replace(u"\\r\\n", "").replace(u" ", u""))
+        calle.append(str(p.contents).split("\\t")[1].replace(u"\\r\\n", "").replace(u" ", u"").replace(u"'", u" ")
         cp.append(str(p.contents).split("\t")[5].split("-")[0].replace(u"\xa0", u""))
         lugar.append(",".join(str(p.contents).split("\t")[5].split("-")[1:]).replace(u"\xa0", u"").replace(u"\r\n",u"").replace(u" ", u""))
 
