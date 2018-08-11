@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
+
+import sqlite3
+import requests
+from bs4 import BeautifulSoup
+
 def main():
-#	from sys import argv
-#	argv.pop(0)	
-
-#	for surname in argv:
-#		surname.replace(" ", "")
-#		print(surname)
-#		PyCrawler(surname)
-
+	
 	surnames = SearchSurnames()
 	for surname in surnames:
 		surname=surname.replace(" ", "")
@@ -15,11 +13,9 @@ def main():
 		print(surname)
 		PyCrawler(surname)	
 
-	print("Finished!")
+	print("¡¡¡Finished!!!")
 
 def PyCrawler(apellido):
-
-    import sqlite3
 
     bd = sqlite3.connect('paginasblancas.db') #bd = sqlite3.connect(:memory:)
 
@@ -49,21 +45,17 @@ def PyCrawler(apellido):
 
 def apellido1(apellido):
 
-    import requests
     pa = requests.get('http://blancas.paginasamarillas.es/jsp/resultados.jsp?ap1='+apellido+'&sec=30&pgpv=1&tbus=0&nomprov=Murcia&idioma=spa')
     return pa
 
 
 def apellido2(apellido):
 
-    import requests
     pa = requests.get('http://blancas.paginasamarillas.es/jsp/resultados.jsp?ap2='+apellido+'&sec=30&pgpv=1&tbus=0&nomprov=Murcia&idioma=spa')
     return pa
 
 
 def getInfo(pa,cursor,bd):
-
-    from bs4 import BeautifulSoup
 
     soup = BeautifulSoup(pa.content, 'html.parser')
 
@@ -107,8 +99,6 @@ def getInfo(pa,cursor,bd):
 
 def SearchSurnames():
 	
-	from bs4 import BeautifulSoup
-	import requests
 	page = requests.get('http://worlduniverse.wikia.com/wiki/Bulgarian_surnames')
 	soup = BeautifulSoup(page.content, 'html.parser')
 
