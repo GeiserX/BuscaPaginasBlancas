@@ -50,14 +50,14 @@ def PyCrawler(apellido):
 def apellido1(apellido):
 
     import requests
-    pa = requests.get('http://blancas.paginasamarillas.es/jsp/resultados.jsp?ap1=%s&sec=30&pgpv=1&tbus=0&nomprov=Murcia&idioma=spa' % apellido)
+    pa = requests.get('http://blancas.paginasamarillas.es/jsp/resultados.jsp?ap1='+apellido+'&sec=30&pgpv=1&tbus=0&nomprov=Murcia&idioma=spa')
     return pa
 
 
 def apellido2(apellido):
 
     import requests
-    pa = requests.get('http://blancas.paginasamarillas.es/jsp/resultados.jsp?ap2=%s&sec=30&pgpv=1&tbus=0&nomprov=Murcia&idioma=spa' % apellido)
+    pa = requests.get('http://blancas.paginasamarillas.es/jsp/resultados.jsp?ap2='+apellido+'&sec=30&pgpv=1&tbus=0&nomprov=Murcia&idioma=spa')
     return pa
 
 
