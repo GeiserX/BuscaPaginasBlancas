@@ -7,6 +7,7 @@
   <a href="https://github.com/GeiserX/BuscaPaginasBlancas/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-LGPL--3.0-green.svg?style=flat-square" alt="License: LGPL-3.0" /></a>
   <a href="https://github.com/GeiserX/BuscaPaginasBlancas/stargazers"><img src="https://img.shields.io/github/stars/GeiserX/BuscaPaginasBlancas?style=flat-square&color=yellow" alt="GitHub Stars" /></a>
   <a href="https://github.com/GeiserX/BuscaPaginasBlancas/issues"><img src="https://img.shields.io/github/issues/GeiserX/BuscaPaginasBlancas?style=flat-square" alt="GitHub Issues" /></a>
+  <a href="https://codecov.io/gh/GeiserX/BuscaPaginasBlancas"><img src="https://codecov.io/gh/GeiserX/BuscaPaginasBlancas/graph/badge.svg" alt="codecov" /></a>
 </p>
 
 <p align="center">
