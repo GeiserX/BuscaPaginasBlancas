@@ -8,6 +8,7 @@
   <a href="https://github.com/GeiserX/BuscaPaginasBlancas/stargazers"><img src="https://img.shields.io/github/stars/GeiserX/BuscaPaginasBlancas?style=flat-square&color=yellow" alt="GitHub Stars" /></a>
   <a href="https://github.com/GeiserX/BuscaPaginasBlancas/issues"><img src="https://img.shields.io/github/issues/GeiserX/BuscaPaginasBlancas?style=flat-square" alt="GitHub Issues" /></a>
   <a href="https://codecov.io/gh/GeiserX/BuscaPaginasBlancas"><img src="https://codecov.io/gh/GeiserX/BuscaPaginasBlancas/graph/badge.svg" alt="codecov" /></a>
+  <a href="https://github.com/GeiserX/awesome-spain#readme"><img src="https://img.shields.io/badge/listed%20on-awesome--spain-c60b1e?style=flat-square&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIxNCIgdmlld0JveD0iMCAwIDIwIDE0Ij48cmVjdCB3aWR0aD0iMjAiIGhlaWdodD0iMTQiIGZpbGw9IiNjNjBiMWUiLz48cmVjdCB5PSIzLjUiIHdpZHRoPSIyMCIgaGVpZ2h0PSI3IiBmaWxsPSIjZmZjNDAwIi8+PC9zdmc+&labelColor=ffc400" alt="listed on awesome-spain" /></a>
 </p>
 
 <p align="center">
