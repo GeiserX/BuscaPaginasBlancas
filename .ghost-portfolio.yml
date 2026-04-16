@@ -1,0 +1,7 @@
+description: "OSINT tool for extracting contact information from Spanish white pages (Paginas Blancas)."
+personalNote: "A quick Python scraper I built to automate lookups on Spain's public phone directory. Useful for OSINT research and verifying contact info — something that's surprisingly tedious to do by hand."
+keyFeatures:
+  - "Automated scraping of Paginas Blancas search results"
+  - "Extracts names, phone numbers, and addresses"
+  - "Simple CLI interface for quick lookups"
+techStack: "Python, BeautifulSoup, Requests"
