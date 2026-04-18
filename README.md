@@ -17,6 +17,8 @@
 
 ---
 
+> **DEPRECATED (April 2026):** The upstream endpoint `blancas.paginasamarillas.es` has been permanently shut down. The [Wayback Machine](https://web.archive.org/web/20201001001806/http://blancas.paginasamarillas.es/jsp/resultados.jsp) confirms the last successful response was on October 1, 2020 — by January 2021 it was returning 404. The shutdown was caused by GDPR/LOPDGDD enforcement (directory listings became opt-in), the collapse of hibu's European directory operations, and Spain's shift to mobile-only. No replacement service exists. This repository is archived for historical reference only.
+
 ## About
 
 **BuscaPaginasBlancas** is a command-line OSINT (Open Source Intelligence) tool that queries the Spanish white pages directory (Paginas Blancas) hosted on `paginasamarillas.es`. Given a list of surnames, it systematically extracts publicly listed contact information -- names, phone numbers, and addresses -- and stores the results in a local SQLite database with automatic deduplication.
