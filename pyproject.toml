@@ -1,0 +1,8 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["crawler"]
+
+[tool.coverage.report]
+show_missing = true
