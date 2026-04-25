@@ -18,4 +18,5 @@ jobs:
       - uses: codecov/codecov-action@v5
         if: github.event_name == 'push'
         with:
+          token: ${{ secrets.CODECOV_TOKEN }}
           fail_ci_if_error: false
